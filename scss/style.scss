@@ -1,0 +1,69 @@
+@mixin margins($x) {
+    margin-left: $x;
+}
+
+.fa {
+    @extend %icons
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    ul {
+        padding: 0;
+        // list-style: none;
+        // width: auto;
+        display: flex;
+        // align-items: flex-start;
+        flex-direction: column;
+        // justify-content: space-between;
+
+        li {
+            background-color: orangered;
+            list-style-type: none;
+            // width: auto;
+            padding: 5px 0;
+            // display: inline-block;
+            text-align: right;
+            margin-left: -93px;
+            transition: margin-left 0.5s;
+
+            a {
+                // float: right;
+                // clear: right;
+                color: black;
+                display: inline-block;
+                width: 120px;
+                padding-right: 10px;
+            }
+
+        }
+
+    }
+}
+
+
+
+
+li.one:hover {
+    @include margins(-30px);
+}
+li.two:hover {
+    @include margins(-20px);
+}
+li.three:hover {
+    @include margins(0px);
+}
+li.four:hover {
+    @include margins(-25px);
+}
+li.five:hover {
+    @include margins(-5px);
+}
+
+
+%icons {
+    padding-left: 20px;
+}

@@ -1,0 +1,50 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+nav ul li {
+  background-color: orangered;
+  list-style-type: none;
+  padding: 5px 0;
+  text-align: right;
+  margin-left: -93px;
+  transition: margin-left 0.5s;
+}
+nav ul li a {
+  color: black;
+  display: inline-block;
+  width: 120px;
+  padding-right: 10px;
+}
+
+li.one:hover {
+  margin-left: -30px;
+}
+
+li.two:hover {
+  margin-left: -20px;
+}
+
+li.three:hover {
+  margin-left: 0px;
+}
+
+li.four:hover {
+  margin-left: -25px;
+}
+
+li.five:hover {
+  margin-left: -5px;
+}
+
+.fa {
+  padding-left: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
